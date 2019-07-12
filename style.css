@@ -1,0 +1,536 @@
+/* general */
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: magneta, serif;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-left: 30px;
+  margin-right: 0;
+  color: white;
+}
+
+h2{
+  font-family: magneta, serif;
+}
+
+.textlink{
+  decoration: none;
+  text-decoration: underline dotted;
+  color: white;
+}
+
+body{
+}
+
+/* menu */
+
+#burger{
+  display: inline-block;
+  color: white;
+  padding-left: 15px;
+}
+
+#current{
+  text-shadow: 0 0 .01px white, 0 0 .01px white;
+}
+
+.navigation {
+  text-align: left;
+  height: 60px;
+  line-height: 60px;
+  padding-bottom: 5px;
+  padding-right: 0;
+  margin-right: 0;
+  background-color: black; /*rgb(45, 55, 60);*/
+  /*border-bottom: 2px solid white;*/
+}
+
+.menu_choice {
+  text-decoration: none;
+  color: white;
+  font-family: interstate,sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+  padding-right: 30px;
+}
+
+.menu a {
+  color: white;
+  line-height: 40px;
+  padding: 0 5px 0 0px;
+}
+
+.menu a:hover {
+  filter: invert(50%);
+}
+
+label {
+  font-size: 2em;
+  line-height: 50px;
+  display: none;
+  width: 1em;
+}
+
+#toggle{
+  display: none;
+}
+
+/* keyframes */
+
+@keyframes fade {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+
+/* mains and backgrounds */
+
+.main{
+  animation: fade 1s;
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.main.home{
+  background-image: url(img/bg3.jpg);
+  background-position: top;
+  background-size: cover;
+  display: center;
+}
+
+.main.vita{
+  background-image: url(img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: center;
+  height: 140%;
+  padding-top: 30px;
+}
+
+.main.gigs{
+  background-image: url(img/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  display: center;
+}
+
+.main.books{
+  background: black;
+  background-position: center;
+  background-size: cover;
+  display: center;
+  height: 250%;
+}
+
+
+/*content unterseiten*/
+
+.infotext{
+  animation: slide-left-right 1s;
+  text-align: justify;
+  word-spacing:-2px;
+  font-family: arial;/*interstate,sans-serif;*/
+  font-style: normal;
+  color: rgb(200, 200, 200);
+  background: rgba(0, 0, 0, 1);
+  margin-right: 45%;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 15px 15px 15px 10%;
+  line-height: 1.5;
+  font-size: 1.2em;
+  position: relative;
+}
+
+#kirmes{
+  margin-top: 50px;
+}
+
+.kalender_container{
+  background: rgb(200, 200, 200);
+  color: rgba(0, 0, 0, 1);
+  margin-left: 50%;
+  margin-right: 0;
+  margin-top: 4%;
+  padding-right: 2%;
+  position: absolute;
+}
+
+.kalender{
+  border-spacing:0 5px;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0 100px 30px;
+  text-align: center;
+  font-family: arial;
+  font-size: 1.5em;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+th{
+  font-family: magneta, serif;
+  color: rgba(0, 0, 0, 1);
+  padding: 0 0 10px 0;
+  margin: 0 0 15px 0;
+  font-size: 35px;
+}
+
+tr{
+  font-family: interstate,sans-serif;
+}
+
+.video{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.video-gallery{
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.buchtext{
+  animation: slide-left-right 1s;
+  text-align: justify;
+  word-spacing:-2px;
+  font-family: arial;/*interstate,sans-serif;*/
+  font-style: normal;
+  font-size: 1.3em;
+  color: rgb(200, 200, 200);
+  background: rgba(0, 0, 0, 1);
+  display: relative;
+  margin-right: 30%;
+  margin-left: 30%;
+  height: 100%;
+}
+
+.buchcover{
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: 40%;
+}
+
+.bookingtext{
+  color: rgb(200, 200, 200);
+  background: rgba(0, 0, 0, 1);
+  font-family: arial;
+}
+
+.leistungen{
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.referenzen{
+  margin-top: 100px;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+p.headline-booking{
+  font-family: magneta, serif;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+p.headline-referenzen{
+  font-family: magneta, serif;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+.lstg{
+  color: rgb(200, 200, 200);
+  word-spacing:-2px;
+  font-family: arial;/*interstate,sans-serif;*/
+  font-style: normal;
+  font-size: 1em;
+}
+
+.rfrzn{
+  color: rgb(200, 200, 200);
+  font-family: arial;/*interstate,sans-serif;*/
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+/*footer*/
+
+footer {
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;/*rgb(45, 55, 67);*/
+  color: white;
+  position: fixed;
+}
+
+.footer_menu {
+  margin: 0 30px 0 30px;
+  height: 40px;
+  float: right;
+}
+
+.footer_menu li {
+  display: inline-block;
+  decoration: none;
+}
+
+.rechtliches {
+  margin: 0 30px 0 30px;
+  float: left;
+}
+
+.rechtliches li:hover {
+  text-shadow: 0 0 .01px white, 0 0 .01px white;
+}
+
+.rechtliches li {
+  display: inline-block;
+  decoration: none;
+  margin-right: 7px;
+  padding-top: 10px;
+  border-bottom: 1px dotted white;
+}
+
+.socialicon {
+  height: 30px;
+  width: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  filter: invert(100%);
+  transition: 0.3s;
+}
+
+.socialicon:hover {
+  filter: invert(20%);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 800px) {
+  /* menu */
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  h1{
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: black;/*rgb(45, 55, 67);*/
+  }
+
+  h2{
+    display: block;
+    text-align: center;
+  }
+
+  .navigation {
+    border-bottom: none;
+    width: 100%;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    padding-right: 0;
+    margin:  60px 0 0 0;
+    background-color: rgba(45, 55, 67, 0.5);
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+  }
+  #toggle:checked + .menu{
+    display: inline-block;
+  }
+
+  /* footer */
+  .rechtliches {
+    margin: 0 5px 0 5px;
+    padding: 0 0 0 15px;
+    font-size: 0.5em;
+  }
+
+  .main{
+    background-position: 77%;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  /*content unterseiten*/
+  .infotext{
+    margin: 0;
+    padding: 15px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .buchtext{
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .video-gallery{
+    margin: 0;
+    padding: 0;
+  }
+
+  iframe{
+    max-width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #impressum{
+    margin-right: 0;
+    width: 100%;
+    margin-top: 50px;
+    max-width: 90%;
+    text-align: left;
+  }
+
+  .buchcover{
+    width: 100%;
+    height: 100%;
+  }
+
+  .main.home{
+    background-position: 77%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main.vita{
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .main.contact{
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .main.gigs{
+    margin-top: 0;
+    padding: 0;
+    background-position: 23%;
+  }
+
+  .main.video{
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .main.books{
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .main.impressum{
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .kalender_container{
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .kalender{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+
+
+  th{
+    font-family: magneta, serif;
+    color: rgba(0, 0, 0, 1);
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  tr{
+    font-family: interstate,sans-serif;
+  }
+
+  td{
+    font-size: 15px;
+  }
+
+
+}
