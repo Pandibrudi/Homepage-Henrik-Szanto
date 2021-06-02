@@ -120,18 +120,19 @@ label {
   height: 100%;
   overflow-y: visible;
   margin: 0;
-  padding: 0;
 }
 
 .main.home{
-  background-image: url(img/bg6.jpg);
-  background-position: top;
+  background-image: url(img/bg5.jpg);
+  padding-top: 40%;
+  background-position: center;
   background-size: cover;
   display: center;
+  padding-left: 10%;
 }
 
 .main.vita{
-  background-image: url(img/bg4.jpg);
+  background-image: url(img/bg3.jpg);
   background-position: center;
   background-size: cover;
   display: center;
@@ -151,10 +152,8 @@ label {
   background-position: center;
   background-size: cover;
   display: center;
-  height: 350%;
-  padding-bottom: 10%;
+  height: 450%;
 }
-
 
 /*content unterseiten*/
 
