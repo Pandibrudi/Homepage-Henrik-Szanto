@@ -124,18 +124,18 @@ label {
 }
 
 .main.home{
-  background-image: url(img/bg3.jpg);
+  background-image: url(img/bg6.jpg);
   background-position: top;
   background-size: cover;
   display: center;
 }
 
 .main.vita{
-  background-image: url(img/bg1.jpg);
+  background-image: url(img/bg4.jpg);
   background-position: center;
   background-size: cover;
   display: center;
-  height: 140%;
+  height: 180%;
   padding-top: 30px;
 }
 
@@ -151,7 +151,8 @@ label {
   background-position: center;
   background-size: cover;
   display: center;
-  height: 250%;
+  height: 350%;
+  padding-bottom: 10%;
 }
 
 
@@ -241,8 +242,8 @@ tr{
 .buchcover{
   margin: 0;
   padding: 0;
-  width: 40%;
-  height: 40%;
+  max-width: 40%;
+  max-height: 40%;
 }
 
 .bookingtext{
